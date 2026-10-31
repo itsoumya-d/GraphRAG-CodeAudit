@@ -1,0 +1,100 @@
+{"id": "q-001", "question": "What security risks exist in api.py?"}
+{"id": "q-002", "question": "What security risks exist in auth.py?"}
+{"id": "q-003", "question": "What security risks exist in db.py?"}
+{"id": "q-004", "question": "What security risks exist in files.py?"}
+{"id": "q-005", "question": "What security risks exist in payments.py?"}
+{"id": "q-006", "question": "Summarize the main risks and dependencies of api.py."}
+{"id": "q-007", "question": "Summarize the main risks and dependencies of auth.py."}
+{"id": "q-008", "question": "Summarize the main risks and dependencies of db.py."}
+{"id": "q-009", "question": "Summarize the main risks and dependencies of files.py."}
+{"id": "q-010", "question": "Summarize the main risks and dependencies of payments.py."}
+{"id": "q-011", "question": "Which components should be reviewed before deploying api.py?"}
+{"id": "q-012", "question": "Which components should be reviewed before deploying auth.py?"}
+{"id": "q-013", "question": "Which components should be reviewed before deploying db.py?"}
+{"id": "q-014", "question": "Which components should be reviewed before deploying files.py?"}
+{"id": "q-015", "question": "Which components should be reviewed before deploying payments.py?"}
+{"id": "q-016", "question": "What does charge do and what risks does it carry?"}
+{"id": "q-017", "question": "What does convert_image do and what risks does it carry?"}
+{"id": "q-018", "question": "What does find_user do and what risks does it carry?"}
+{"id": "q-019", "question": "What does hash_password do and what risks does it carry?"}
+{"id": "q-020", "question": "What does issue_token do and what risks does it carry?"}
+{"id": "q-021", "question": "What does list_dir do and what risks does it carry?"}
+{"id": "q-022", "question": "What does load_snapshot do and what risks does it carry?"}
+{"id": "q-023", "question": "What does login do and what risks does it carry?"}
+{"id": "q-024", "question": "What does refund do and what risks does it carry?"}
+{"id": "q-025", "question": "What does register do and what risks does it carry?"}
+{"id": "q-026", "question": "What does restore_snapshot do and what risks does it carry?"}
+{"id": "q-027", "question": "What does save_user do and what risks does it carry?"}
+{"id": "q-028", "question": "What does verify_password do and what risks does it carry?"}
+{"id": "q-029", "question": "Which modules depend on charge?"}
+{"id": "q-030", "question": "Which modules depend on convert_image?"}
+{"id": "q-031", "question": "Which modules depend on find_user?"}
+{"id": "q-032", "question": "Which modules depend on hash_password?"}
+{"id": "q-033", "question": "Which modules depend on issue_token?"}
+{"id": "q-034", "question": "Which modules depend on list_dir?"}
+{"id": "q-035", "question": "Which modules depend on load_snapshot?"}
+{"id": "q-036", "question": "Which modules depend on login?"}
+{"id": "q-037", "question": "Which modules depend on refund?"}
+{"id": "q-038", "question": "Which modules depend on register?"}
+{"id": "q-039", "question": "Which modules depend on restore_snapshot?"}
+{"id": "q-040", "question": "Which modules depend on save_user?"}
+{"id": "q-041", "question": "Which modules depend on verify_password?"}
+{"id": "q-042", "question": "How does api.py interact with auth?"}
+{"id": "q-043", "question": "How does api.py interact with db?"}
+{"id": "q-044", "question": "How does api.py interact with files?"}
+{"id": "q-045", "question": "How does api.py interact with login?"}
+{"id": "q-046", "question": "How does api.py interact with register?"}
+{"id": "q-047", "question": "How does api.py interact with restore_snapshot?"}
+{"id": "q-048", "question": "How does auth.py interact with hash_password?"}
+{"id": "q-049", "question": "How does auth.py interact with hashlib?"}
+{"id": "q-050", "question": "How does auth.py interact with issue_token?"}
+{"id": "q-051", "question": "How does auth.py interact with os?"}
+{"id": "q-052", "question": "How does auth.py interact with verify_password?"}
+{"id": "q-053", "question": "How does db.py interact with find_user?"}
+{"id": "q-054", "question": "How does db.py interact with save_user?"}
+{"id": "q-055", "question": "How does db.py interact with sqlite3?"}
+{"id": "q-056", "question": "How does files.py interact with convert_image?"}
+{"id": "q-057", "question": "How does files.py interact with list_dir?"}
+{"id": "q-058", "question": "How does files.py interact with load_snapshot?"}
+{"id": "q-059", "question": "How does files.py interact with os?"}
+{"id": "q-060", "question": "How does files.py interact with pickle?"}
+{"id": "q-061", "question": "How does files.py interact with subprocess?"}
+{"id": "q-062", "question": "How does payments.py interact with charge?"}
+{"id": "q-063", "question": "How does payments.py interact with logging?"}
+{"id": "q-064", "question": "How does payments.py interact with refund?"}
+{"id": "q-065", "question": "Audit question 1: what should be reviewed in api.py?"}
+{"id": "q-066", "question": "Audit question 2: what should be reviewed in auth.py?"}
+{"id": "q-067", "question": "Audit question 3: what should be reviewed in db.py?"}
+{"id": "q-068", "question": "Audit question 4: what should be reviewed in files.py?"}
+{"id": "q-069", "question": "Audit question 5: what should be reviewed in payments.py?"}
+{"id": "q-070", "question": "Audit question 6: what should be reviewed in api.py?"}
+{"id": "q-071", "question": "Audit question 7: what should be reviewed in auth.py?"}
+{"id": "q-072", "question": "Audit question 8: what should be reviewed in db.py?"}
+{"id": "q-073", "question": "Audit question 9: what should be reviewed in files.py?"}
+{"id": "q-074", "question": "Audit question 10: what should be reviewed in payments.py?"}
+{"id": "q-075", "question": "Audit question 11: what should be reviewed in api.py?"}
+{"id": "q-076", "question": "Audit question 12: what should be reviewed in auth.py?"}
+{"id": "q-077", "question": "Audit question 13: what should be reviewed in db.py?"}
+{"id": "q-078", "question": "Audit question 14: what should be reviewed in files.py?"}
+{"id": "q-079", "question": "Audit question 15: what should be reviewed in payments.py?"}
+{"id": "q-080", "question": "Audit question 16: what should be reviewed in api.py?"}
+{"id": "q-081", "question": "Audit question 17: what should be reviewed in auth.py?"}
+{"id": "q-082", "question": "Audit question 18: what should be reviewed in db.py?"}
+{"id": "q-083", "question": "Audit question 19: what should be reviewed in files.py?"}
+{"id": "q-084", "question": "Audit question 20: what should be reviewed in payments.py?"}
+{"id": "q-085", "question": "Audit question 21: what should be reviewed in api.py?"}
+{"id": "q-086", "question": "Audit question 22: what should be reviewed in auth.py?"}
+{"id": "q-087", "question": "Audit question 23: what should be reviewed in db.py?"}
+{"id": "q-088", "question": "Audit question 24: what should be reviewed in files.py?"}
+{"id": "q-089", "question": "Audit question 25: what should be reviewed in payments.py?"}
+{"id": "q-090", "question": "Audit question 26: what should be reviewed in api.py?"}
+{"id": "q-091", "question": "Audit question 27: what should be reviewed in auth.py?"}
+{"id": "q-092", "question": "Audit question 28: what should be reviewed in db.py?"}
+{"id": "q-093", "question": "Audit question 29: what should be reviewed in files.py?"}
+{"id": "q-094", "question": "Audit question 30: what should be reviewed in payments.py?"}
+{"id": "q-095", "question": "Audit question 31: what should be reviewed in api.py?"}
+{"id": "q-096", "question": "Audit question 32: what should be reviewed in auth.py?"}
+{"id": "q-097", "question": "Audit question 33: what should be reviewed in db.py?"}
+{"id": "q-098", "question": "Audit question 34: what should be reviewed in files.py?"}
+{"id": "q-099", "question": "Audit question 35: what should be reviewed in payments.py?"}
+{"id": "q-100", "question": "Audit question 36: what should be reviewed in api.py?"}

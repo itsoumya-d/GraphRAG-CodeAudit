@@ -1,0 +1,1925 @@
+{
+  "repo": "/Users/soumyadebnath16/Developer/Shado/repos/GraphRAG-CodeAudit/data/sample_repo",
+  "questions": 100,
+  "community_method": "louvain-fallback",
+  "communities": 5,
+  "graph": {
+    "comprehensiveness": 8.58,
+    "diversity": 10.0,
+    "empowerment": 4.01,
+    "directness": 7.72
+  },
+  "flat": {
+    "comprehensiveness": 8.58,
+    "diversity": 10.0,
+    "empowerment": 2.28,
+    "directness": 7.4
+  },
+  "graph_average": 7.58,
+  "flat_average": 7.07,
+  "graph_wins": 64,
+  "win_rate": 0.64,
+  "details": [
+    {
+      "question": "What security risks exist in api.py?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 1.65,
+        "directness": 7.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.54,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What security risks exist in auth.py?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 5.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.13,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What security risks exist in db.py?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 4.48
+      },
+      "graph_average": 7.33,
+      "flat_average": 5.5,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What security risks exist in files.py?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 7.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What security risks exist in payments.py?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 5.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.12,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Summarize the main risks and dependencies of api.py.",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.65,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.75,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Summarize the main risks and dependencies of auth.py.",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 5.81
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.34,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Summarize the main risks and dependencies of db.py.",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 4.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 5.5,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Summarize the main risks and dependencies of files.py.",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.79,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Summarize the main risks and dependencies of payments.py.",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 5.81
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.33,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which components should be reviewed before deploying api.py?",
+      "graph": {
+        "comprehensiveness": 9.6,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.4
+      },
+      "flat": {
+        "comprehensiveness": 7.2,
+        "diversity": 10.0,
+        "empowerment": 1.65,
+        "directness": 6.8
+      },
+      "graph_average": 8.0,
+      "flat_average": 6.41,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which components should be reviewed before deploying auth.py?",
+      "graph": {
+        "comprehensiveness": 9.6,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.4
+      },
+      "flat": {
+        "comprehensiveness": 7.2,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 5.28
+      },
+      "graph_average": 8.0,
+      "flat_average": 6.01,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which components should be reviewed before deploying db.py?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 4.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 5.5,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which components should be reviewed before deploying files.py?",
+      "graph": {
+        "comprehensiveness": 9.6,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.4
+      },
+      "flat": {
+        "comprehensiveness": 7.2,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 6.8
+      },
+      "graph_average": 8.0,
+      "flat_average": 6.46,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which components should be reviewed before deploying payments.py?",
+      "graph": {
+        "comprehensiveness": 9.6,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.4
+      },
+      "flat": {
+        "comprehensiveness": 7.2,
+        "diversity": 10.0,
+        "empowerment": 1.5,
+        "directness": 5.28
+      },
+      "graph_average": 8.0,
+      "flat_average": 6.0,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does charge do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.72,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does convert_image do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.81
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.3,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does find_user do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does hash_password do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.6,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.73,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does issue_token do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.79,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does list_dir do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does load_snapshot do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does login do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.45,
+        "directness": 5.81
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.31,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does refund do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.72,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does register do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does restore_snapshot do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does save_user do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.7,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.76,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "What does verify_password do and what risks does it carry?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.95,
+        "directness": 7.33
+      },
+      "graph_average": 8.17,
+      "flat_average": 6.82,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on charge?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.72,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on convert_image?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.81
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.3,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on find_user?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on hash_password?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.6,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.73,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on issue_token?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.79,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on list_dir?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on load_snapshot?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on login?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.45,
+        "directness": 5.81
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.31,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on refund?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.72,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on register?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on restore_snapshot?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.4,
+        "directness": 5.77
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.29,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on save_user?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.7,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.76,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Which modules depend on verify_password?",
+      "graph": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.33
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 1.95,
+        "directness": 7.33
+      },
+      "graph_average": 7.33,
+      "flat_average": 6.82,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with auth?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.9,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.64,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with db?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 7.16,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with files?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.63,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with login?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.8,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.62,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with register?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does api.py interact with restore_snapshot?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does auth.py interact with hash_password?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.63,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does auth.py interact with hashlib?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.9,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.64,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does auth.py interact with issue_token?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.63,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does auth.py interact with os?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 6.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.76,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does auth.py interact with verify_password?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.95,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does db.py interact with find_user?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.75,
+        "directness": 8.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 7.19,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does db.py interact with save_user?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.7,
+        "directness": 8.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 7.17,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does db.py interact with sqlite3?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.6,
+        "directness": 6.48
+      },
+      "graph_average": 7.75,
+      "flat_average": 6.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with convert_image?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.95,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with list_dir?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.95,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with load_snapshot?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 2.1,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.69,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with os?",
+      "graph": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 1.85,
+        "directness": 8.0
+      },
+      "graph_average": 7.75,
+      "flat_average": 7.21,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with pickle?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 5.5,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 2.2,
+        "directness": 8.67
+      },
+      "graph_average": 8.54,
+      "flat_average": 7.72,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does files.py interact with subprocess?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 2.4,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.77,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does payments.py interact with charge?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.55,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does payments.py interact with logging?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.9,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.64,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "How does payments.py interact with refund?",
+      "graph": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 8.67
+      },
+      "flat": {
+        "comprehensiveness": 10.0,
+        "diversity": 10.0,
+        "empowerment": 1.55,
+        "directness": 8.67
+      },
+      "graph_average": 8.17,
+      "flat_average": 7.55,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 1: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 2: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 3: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 4: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 5: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 6: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 7: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 8: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 9: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 10: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 11: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 12: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 13: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 14: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 15: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 16: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 17: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 18: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 19: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 20: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 21: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 22: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 23: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 24: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 25: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 26: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 27: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 28: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 29: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 30: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 31: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 32: what should be reviewed in auth.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.35,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.59,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 33: what should be reviewed in db.py?",
+      "graph": {
+        "comprehensiveness": 6.0,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 6.0
+      },
+      "flat": {
+        "comprehensiveness": 8.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 7.33
+      },
+      "graph_average": 6.5,
+      "flat_average": 7.11,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 34: what should be reviewed in files.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.65,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.66,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 35: what should be reviewed in payments.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.1,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.53,
+      "graph_citations": 5,
+      "flat_citations": 5
+    },
+    {
+      "question": "Audit question 36: what should be reviewed in api.py?",
+      "graph": {
+        "comprehensiveness": 7.5,
+        "diversity": 10.0,
+        "empowerment": 4.0,
+        "directness": 7.0
+      },
+      "flat": {
+        "comprehensiveness": 9.0,
+        "diversity": 10.0,
+        "empowerment": 3.45,
+        "directness": 8.0
+      },
+      "graph_average": 7.12,
+      "flat_average": 7.61,
+      "graph_citations": 5,
+      "flat_citations": 5
+    }
+  ],
+  "note": "Deterministic rubric judge on a synthetic repository; not the paper's LLM judge or dataset."
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphrag-codeaudit"
+version = "0.1.0"
+description = "Local-to-global GraphRAG for codebases and compliance audits."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Soumya Debnath" }]
+dependencies = []
+
+[project.optional-dependencies]
+leiden = ["igraph>=0.11", "leidenalg>=0.10"]
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+packages = ["graphrag_audit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
