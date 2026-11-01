@@ -1,4 +1,5 @@
 # SPDX-License-Identifier: MIT
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -32,6 +33,19 @@ class ExtractionTests(unittest.TestCase):
         }:
             self.assertIn(expected, kinds)
         self.assertTrue(all(claim.source_ids for claim in self.corpus.claims))
+
+    def test_comments_patterns_and_parameterized_sql_are_not_claims(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            Path(tmp, "safe.py").write_text(
+                "# shell=True is a comment, not a call\n"
+                "PATTERN = re.compile(r\"shell\\s*=\\s*True\")\n"
+                "cursor.execute(\"SELECT id FROM users WHERE id = ?\", (user_id,))\n",
+                encoding="utf-8",
+            )
+            corpus = extract_repository(tmp)
+        kinds = {claim.id.split(":")[-1] for claim in corpus.claims}
+        self.assertNotIn("shell-injection", kinds)
+        self.assertNotIn("sql-construction", kinds)
 
     def test_graph_builds(self):
         graph = KnowledgeGraph().from_corpus(self.corpus)

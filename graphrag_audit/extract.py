@@ -15,7 +15,7 @@ PATTERNS = [
     (re.compile(r"pickle\.loads?\s*\("), "insecure-deserialization", "security", "pickle deserialization"),
     (re.compile(r"SECRET_KEY\s*=\s*['\"]"), "hardcoded-secret", "security", "hardcoded SECRET_KEY"),
     (re.compile(r"PASSWORD\s*=\s*['\"]", re.IGNORECASE), "hardcoded-password", "security", "hardcoded password"),
-    (re.compile(r"execute\s*\(\s*f?['\"].*(SELECT|INSERT|UPDATE|DELETE)", re.IGNORECASE), "sql-construction", "security", "SQL built from a string"),
+    (re.compile(r"execute\s*\(\s*f['\"].*(SELECT|INSERT|UPDATE|DELETE)", re.IGNORECASE), "sql-construction", "security", "SQL built from an f-string"),
     (re.compile(r"os\.system\s*\("), "command-execution", "security", "os.system call"),
     (re.compile(r"hashlib\.(md5|sha1)\s*\("), "weak-hash", "security", "weak hash algorithm"),
     (re.compile(r"verify\s*=\s*False"), "tls-verification-disabled", "security", "TLS verification disabled"),
@@ -121,6 +121,9 @@ def extract_repository(root: str | Path) -> Corpus:
                     )
 
         for line_number, line in enumerate(lines, 1):
+            stripped = line.lstrip()
+            if stripped.startswith("#") or "re.compile(" in line:
+                continue
             for pattern, kind, category, description in PATTERNS:
                 if pattern.search(line):
                     entity_id = _nearest_definition(ranges, line_number, module_id)

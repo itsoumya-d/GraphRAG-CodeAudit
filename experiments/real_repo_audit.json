@@ -1,0 +1,267 @@
+{
+  "generated_at": "2026-11-01T06:19:10.290520+00:00",
+  "boundary": "Deterministic Python-AST extraction and Louvain/Leiden communities. Risk claims come from regex patterns, not an LLM judge. No model was called.",
+  "repos": [
+    {
+      "repo": "/Users/soumyadebnath16/Developer/Shado/repos/HEROS-RL",
+      "files": 22,
+      "text_units": 90,
+      "entities": 129,
+      "relationships": 209,
+      "claims": 1,
+      "claims_by_kind": {
+        "security": 1
+      },
+      "graph_edges": 304,
+      "communities": 30,
+      "levels": 2,
+      "modularity": 0.675862,
+      "community_method": "louvain-fallback",
+      "community_reports": 30,
+      "reports_with_risks": 2,
+      "top_entities_by_degree": [
+        {
+          "id": "import:heros_rl",
+          "degree": 26.0
+        },
+        {
+          "id": "module:heros_rl/mining.py",
+          "degree": 23.0
+        },
+        {
+          "id": "import:__future__",
+          "degree": 16.5
+        },
+        {
+          "id": "module:heros_rl/rewards.py",
+          "degree": 15.5
+        },
+        {
+          "id": "module:scripts/evaluate.py",
+          "degree": 15.5
+        },
+        {
+          "id": "module:heros_rl/forge.py",
+          "degree": 15.0
+        },
+        {
+          "id": "module:heros_rl/dataset.py",
+          "degree": 13.5
+        },
+        {
+          "id": "module:scripts/toy_grpo.py",
+          "degree": 13.5
+        },
+        {
+          "id": "module:scripts/train_grpo_trl.py",
+          "degree": 13.5
+        },
+        {
+          "id": "external:TestCase",
+          "degree": 12.5
+        }
+      ],
+      "top_risks": [
+        {
+          "text": "dynamic eval() call: model.eval()",
+          "kind": "security",
+          "sources": [
+            "scripts/evaluate.py:61-100"
+          ]
+        }
+      ]
+    },
+    {
+      "repo": "/Users/soumyadebnath16/Developer/Shado/repos/Reflexion-SWE",
+      "files": 21,
+      "text_units": 76,
+      "entities": 114,
+      "relationships": 200,
+      "claims": 0,
+      "claims_by_kind": {},
+      "graph_edges": 278,
+      "communities": 26,
+      "levels": 2,
+      "modularity": 0.654546,
+      "community_method": "louvain-fallback",
+      "community_reports": 26,
+      "reports_with_risks": 0,
+      "top_entities_by_degree": [
+        {
+          "id": "import:reflexion_swe",
+          "degree": 30.5
+        },
+        {
+          "id": "module:reflexion_swe/agent.py",
+          "degree": 20.5
+        },
+        {
+          "id": "module:reflexion_swe/sandbox.py",
+          "degree": 20.5
+        },
+        {
+          "id": "module:reflexion_swe/llm.py",
+          "degree": 17.0
+        },
+        {
+          "id": "import:__future__",
+          "degree": 16.5
+        },
+        {
+          "id": "module:reflexion_swe/eval.py",
+          "degree": 15.0
+        },
+        {
+          "id": "module:reflexion_swe/tests_gen.py",
+          "degree": 15.0
+        },
+        {
+          "id": "external:TestCase",
+          "degree": 13.0
+        },
+        {
+          "id": "module:reflexion_swe/tf_grpo.py",
+          "degree": 13.0
+        },
+        {
+          "id": "module:scripts/distill_priors.py",
+          "degree": 12.5
+        }
+      ],
+      "top_risks": []
+    },
+    {
+      "repo": "/Users/soumyadebnath16/Developer/Shado/repos/GraphRAG-CodeAudit",
+      "files": 25,
+      "text_units": 64,
+      "entities": 112,
+      "relationships": 190,
+      "claims": 10,
+      "claims_by_kind": {
+        "privacy": 1,
+        "security": 9
+      },
+      "graph_edges": 281,
+      "communities": 32,
+      "levels": 2,
+      "modularity": 0.700068,
+      "community_method": "louvain-fallback",
+      "community_reports": 32,
+      "reports_with_risks": 12,
+      "top_entities_by_degree": [
+        {
+          "id": "import:graphrag_audit",
+          "degree": 32.5
+        },
+        {
+          "id": "module:graphrag_audit/communities.py",
+          "degree": 16.0
+        },
+        {
+          "id": "module:scripts/audit_repo.py",
+          "degree": 15.5
+        },
+        {
+          "id": "import:__future__",
+          "degree": 15.0
+        },
+        {
+          "id": "import:types",
+          "degree": 14.0
+        },
+        {
+          "id": "module:graphrag_audit/eval.py",
+          "degree": 13.0
+        },
+        {
+          "id": "module:graphrag_audit/__init__.py",
+          "degree": 12.0
+        },
+        {
+          "id": "module:graphrag_audit/types.py",
+          "degree": 11.5
+        },
+        {
+          "id": "import:pathlib",
+          "degree": 11.0
+        },
+        {
+          "id": "module:scripts/query.py",
+          "degree": 10.5
+        }
+      ],
+      "top_risks": [
+        {
+          "text": "hardcoded SECRET_KEY: SECRET_KEY = \"dev-secret-change-me\"",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/auth.py:1-18"
+          ]
+        },
+        {
+          "text": "weak hash algorithm: return hashlib.md5(password.encode()).hexdigest()",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/auth.py:1-18"
+          ]
+        },
+        {
+          "text": "SQL built from an f-string: cursor.execute(f\"SELECT id, email FROM users WHERE email = '{email}'\")",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/db.py:1-17"
+          ]
+        },
+        {
+          "text": "pickle deserialization: return pickle.loads(handle.read())",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/files.py:1-20"
+          ]
+        },
+        {
+          "text": "subprocess with shell=True: return subprocess.check_output(f\"convert {path} /tmp/out.png\", shell=True, text=True)",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/files.py:1-20"
+          ]
+        },
+        {
+          "text": "os.system call: os.system(f\"ls {path}\")",
+          "kind": "security",
+          "sources": [
+            "data/sample_repo/files.py:1-20"
+          ]
+        },
+        {
+          "text": "potential PII in logs: logger.info(\"charging customer %s for %s\", customer_email, amount)",
+          "kind": "privacy",
+          "sources": [
+            "data/sample_repo/payments.py:1-14"
+          ]
+        },
+        {
+          "text": "weak hash algorithm: digest = hashlib.sha1(token.encode(\"utf-8\")).digest()",
+          "kind": "security",
+          "sources": [
+            "graphrag_audit/index.py:31-63"
+          ]
+        },
+        {
+          "text": "SQL built from an f-string: return [json.loads(row[0]) for row in self.connection.execute(f\"SELECT payload FROM {table}\")]",
+          "kind": "security",
+          "sources": [
+            "graphrag_audit/store.py:31-65"
+          ]
+        },
+        {
+          "text": "subprocess with shell=True: \"# shell=True is a comment, not a call\\n\"",
+          "kind": "security",
+          "sources": [
+            "tests/test_extract.py:31-57"
+          ]
+        }
+      ]
+    }
+  ]
+}

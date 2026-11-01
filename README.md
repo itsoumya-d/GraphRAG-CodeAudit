@@ -102,13 +102,39 @@ This is a reproducible harness result on a synthetic repository, **not** a
 replication of the paper's LLM-as-a-judge study on real enterprise corpora. See
 [RESULTS.md](RESULTS.md) for the full methodology and limitations.
 
+### Real repository audit
+
+```bash
+python scripts/audit_repo.py --repo ../HEROS-RL ../Reflexion-SWE .
+```
+
+The deterministic extractor was run on three real Python repositories on
+2026-11-01. No model was called.
+
+| Repository | Files | Entities | Edges | Claims | Communities | Modularity | Method |
+|---|---:|---:|---:|---:|---:|---:|---|
+| HEROS-RL | 22 | 129 | 304 | 1 | 30 | 0.6759 | louvain-fallback |
+| Reflexion-SWE | 21 | 114 | 278 | 0 | 26 | 0.6545 | louvain-fallback |
+| GraphRAG-CodeAudit (self) | 25 | 112 | 281 | 10 | 32 | 0.7001 | louvain-fallback |
+
+The self-audit exposed a real false-positive class: the first run flagged the
+extractor's own regex definitions and a comment containing `shell=True`. The
+extractor now skips comment-only lines and `re.compile(...)` definitions, and
+only flags SQL built from an f-string rather than every `execute(...)` call.
+Parameterized SQL is no longer reported. Raw output:
+`experiments/real_repo_audit.json`.
+
+Boundary: Python AST only; risk claims are regex patterns, not an LLM judge;
+the sample fixture repository is intentionally vulnerable and its claims are
+expected.
+
 ## Tests
 
 ```bash
 python -m unittest discover -s tests -v
 ```
 
-15 tests cover graph weights and modularity, hierarchical communities,
+16 tests cover graph weights and modularity, hierarchical communities,
 deterministic Louvain, extraction of security/privacy claims, local/global
 queries, the flat baseline, judge behaviour, the 100-question harness, and
 SQLite persistence.
