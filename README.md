@@ -37,7 +37,7 @@ local entity search          global map-reduce search
 
 | Module | Responsibility |
 |---|---|
-| `extract.py` | Python AST entities/edges, risk claims, text units |
+| `extract.py` | Python AST and tree-sitter TS/JS/TSX entities/edges, risk claims, text units |
 | `graph.py` | Undirected weighted graph + modularity |
 | `communities.py` | Deterministic Louvain hierarchy; optional reference Leiden |
 | `summarize.py` | Bottom-up reports with risks, dependencies, recommended actions |
@@ -82,7 +82,7 @@ it falls back to the deterministic Louvain hierarchy and reports
 ## Measured evaluation
 
 The synthetic sample repository has 5 files, 5 text units, 27 entities, 23
-relationships, and 9 risk claims. The harness generates 100 sensemaking
+relationships, and 7 risk claims. The harness generates 100 sensemaking
 questions and scores global GraphRAG against flat vector RAG with a deterministic
 rubric judge:
 
@@ -124,9 +124,20 @@ only flags SQL built from an f-string rather than every `execute(...)` call.
 Parameterized SQL is no longer reported. Raw output:
 `experiments/real_repo_audit.json`.
 
-Boundary: Python AST only; risk claims are regex patterns, not an LLM judge;
-the sample fixture repository is intentionally vulnerable and its claims are
-expected.
+Boundary: Python AST plus tree-sitter TypeScript/JavaScript/TSX AST; risk
+claims are regex patterns, not an LLM judge; the sample fixture repository is
+intentionally vulnerable and its claims are expected.
+
+## Language support
+
+- **Python:** `ast`-based modules, classes, functions, imports, and inheritance.
+- **TypeScript / TSX / JavaScript:** tree-sitter modules, classes, methods,
+  functions, arrow-function constants, interfaces, ES imports, CommonJS
+  `require`, and `extends` inheritance.
+- Claims are scanned on non-comment lines with language-specific regexes; the
+  TS/JS fixture in `data/sample_repo_ts` covers XSS sinks, interpolated shell
+  commands, weak hashes, hardcoded passwords, and dynamic `eval`.
+- No type resolution, call graph, or cross-file symbol binding is performed.
 
 ## Tests
 
@@ -134,10 +145,10 @@ expected.
 python -m unittest discover -s tests -v
 ```
 
-16 tests cover graph weights and modularity, hierarchical communities,
-deterministic Louvain, extraction of security/privacy claims, local/global
-queries, the flat baseline, judge behaviour, the 100-question harness, and
-SQLite persistence.
+22 tests cover graph weights and modularity, hierarchical communities,
+deterministic Louvain, Python and TypeScript/JavaScript extraction, provenance
+for every claim, local/global queries, the flat baseline, judge behaviour, the
+100-question harness, and SQLite persistence.
 
 ## Infrastructure status
 

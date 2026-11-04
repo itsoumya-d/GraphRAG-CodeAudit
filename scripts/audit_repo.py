@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
-"""Audit one or more real Python repositories with the deterministic GraphRAG stack."""
+"""Audit one or more real Python/TypeScript/JavaScript repositories with the deterministic GraphRAG stack."""
 
 from __future__ import annotations
 
@@ -72,7 +72,7 @@ def main() -> int:
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "boundary": (
-            "Deterministic Python-AST extraction and Louvain/Leiden communities. "
+            "Deterministic Python and TypeScript/JavaScript AST extraction plus Louvain/Leiden communities. "
             "Risk claims come from regex patterns, not an LLM judge. No model was called."
         ),
         "repos": [audit(repo) for repo in args.repo],
